@@ -300,20 +300,6 @@
           }
         }
       },
-      "border-width": {
-        "sm": {
-          "$type": "borderWidth",
-          "$value": "1px"
-        },
-        "md": {
-          "$type": "borderWidth",
-          "$value": "2px"
-        },
-        "lg": {
-          "$type": "borderWidth",
-          "$value": "4px"
-        }
-      },
       "size": {
         "5xs": {
           "$type": "sizing",
@@ -385,6 +371,48 @@
             "$value": "48px"
           }
         }
+      }
+    },
+    "ocn": {
+      "border-radius": {
+        "sm": {
+          "$type": "borderRadius",
+          "$value": "4px"
+        },
+        "md": {
+          "$type": "borderRadius",
+          "$value": "8px"
+        },
+        "lg": {
+          "$type": "borderRadius",
+          "$value": "16px"
+        },
+        "round": {
+          "$type": "borderRadius",
+          "$value": "999px"
+        },
+        "none": {
+          "$type": "borderRadius",
+          "$value": "0"
+        }
+      },
+      "border-width": {
+        "sm": {
+          "$type": "borderWidth",
+          "$value": "1px"
+        },
+        "md": {
+          "$type": "borderWidth",
+          "$value": "2px"
+        },
+        "lg": {
+          "$type": "borderWidth",
+          "$value": "4px"
+        },
+        "mdlg": {
+          "$type": "borderWidth",
+          "$value": "3px"
+        }
       },
       "box-shadow": {
         "sm": {
@@ -419,30 +447,17 @@
             "color": "{ocn.color.dark.alpha.100}",
             "type": "dropShadow"
           }
-        }
-      }
-    },
-    "ocn": {
-      "border-radius": {
-        "sm": {
-          "$type": "borderRadius",
-          "$value": "4px"
         },
-        "md": {
-          "$type": "borderRadius",
-          "$value": "8px"
-        },
-        "lg": {
-          "$type": "borderRadius",
-          "$value": "16px"
-        },
-        "round": {
-          "$type": "borderRadius",
-          "$value": "999px"
-        },
-        "none": {
-          "$type": "borderRadius",
-          "$value": "0"
+        "modal": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "48",
+            "spread": "0",
+            "color": "{ocn.color.dark.alpha.100}",
+            "type": "dropShadow"
+          }
         }
       },
       "typography": {
@@ -596,6 +611,10 @@
           "$type": "color",
           "$value": "{ocn.color.gray.20}"
         },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": "{ocn.border-width.sm}"
+        },
         "disabled": {
           "background-color": {
             "$type": "color",
@@ -622,6 +641,10 @@
           "color": {
             "$type": "color",
             "$value": "{ocn.color.black}"
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "{ocn.border-width.md}"
           }
         },
         "invalid": {
@@ -636,6 +659,10 @@
           "color": {
             "$type": "color",
             "$value": "{voorbeeld.feedback.negative.color}"
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "{ocn.border-width.md}"
           }
         },
         "read-only": {
@@ -687,6 +714,10 @@
             "$type": "color",
             "$value": "{ocn.color.white}"
           }
+        },
+        "outline-width": {
+          "$type": "borderWidth",
+          "$value": "{ocn.border-width.md}"
         }
       },
       "feedback": {
@@ -740,22 +771,6 @@
           "$type": "fontWeights",
           "$value": "{ocn.typography.font-weight.normal}"
         },
-        "border-width": {
-          "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.sm}"
-        },
-        "focus": {
-          "border-width": {
-            "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.md}"
-          }
-        },
-        "invalid": {
-          "border-width": {
-            "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.md}"
-          }
-        },
         "border-radius": {
           "$type": "borderRadius",
           "$value": "0px"
@@ -801,10 +816,6 @@
         "outline-style": {
           "$type": "other",
           "$value": "dotted"
-        },
-        "outline-width": {
-          "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.md}"
         }
       },
       "pointer-target": {
@@ -824,7 +835,7 @@
       "container": {
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.sm}"
+          "$value": "{ocn.border-width.sm}"
         },
         "border-color": {
           "$type": "color",
@@ -834,7 +845,7 @@
       "line": {
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.sm}"
+          "$value": "{ocn.border-width.sm}"
         },
         "border-color": {
           "$type": "color",
@@ -845,7 +856,7 @@
         "active": {
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.md}"
+            "$value": "{ocn.border-width.md}"
           },
           "accent-color": {
             "$type": "color",
@@ -867,7 +878,7 @@
         "hover": {
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.md}"
+            "$value": "{ocn.border-width.md}"
           },
           "accent-color": {
             "$type": "color",
@@ -1043,7 +1054,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           },
           "padding-block-end": {
             "$type": "spacing",
@@ -1145,7 +1156,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           },
           "border-radius": {
             "$type": "borderRadius",
@@ -1163,7 +1174,7 @@
         "section": {
           "border-block-end-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           },
           "border-color": {
             "$type": "color",
@@ -1222,7 +1233,7 @@
         },
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.md}"
+          "$value": "{ocn.border-width.md}"
         },
         "color": {
           "$type": "color",
@@ -1432,7 +1443,7 @@
         },
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.sm}"
+          "$value": "{ocn.border-width.sm}"
         },
         "hover": {
           "background-color": {
@@ -2038,7 +2049,7 @@
       "button": {
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.sm}"
+          "$value": "{ocn.border-width.sm}"
         },
         "icon": {
           "size": {
@@ -2338,7 +2349,7 @@
         },
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{utrecht.form-control.border-width}"
+          "$value": "{ocn.form-control.border-width}"
         },
         "size": {
           "$type": "sizing",
@@ -2399,7 +2410,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{utrecht.form-control.focus.border-width}"
+            "$value": "{ocn.form-control.focus.border-width}"
           }
         },
         "invalid": {
@@ -2413,7 +2424,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{utrecht.form-control.invalid.border-width}"
+            "$value": "{ocn.form-control.invalid.border-width}"
           }
         },
         "checked": {
@@ -2427,7 +2438,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{utrecht.form-control.border-width}"
+            "$value": "{ocn.form-control.border-width}"
           },
           "color": {
             "$type": "color",
@@ -2445,7 +2456,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{utrecht.form-control.border-width}"
+            "$value": "{ocn.form-control.border-width}"
           },
           "color": {
             "$type": "color",
@@ -2460,7 +2471,7 @@
           "focus": {
             "border-width": {
               "$type": "borderWidth",
-              "$value": "{utrecht.form-control.focus.border-width}"
+              "$value": "{ocn.form-control.focus.border-width}"
             },
             "background-color": {
               "$type": "color",
@@ -2566,7 +2577,7 @@
           "focus": {
             "border-width": {
               "$type": "borderWidth",
-              "$value": "{utrecht.form-control.focus.border-width}"
+              "$value": "{ocn.form-control.focus.border-width}"
             },
             "background-color": {
               "$type": "color",
@@ -2694,7 +2705,7 @@
         },
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.sm}"
+          "$value": "{ocn.border-width.sm}"
         },
         "border-color": {
           "$type": "color",
@@ -2733,7 +2744,7 @@
         "header": {
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           },
           "label": {
             "color": {
@@ -2793,7 +2804,7 @@
         "footer": {
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           },
           "padding-block-end": {
             "$type": "spacing",
@@ -2822,7 +2833,7 @@
         },
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.sm}"
+          "$value": "{ocn.border-width.sm}"
         },
         "content": {
           "padding-block-end": {
@@ -2852,7 +2863,7 @@
         },
         "box-shadow": {
           "$type": "boxShadow",
-          "$value": "{voorbeeld.box-shadow.lg}"
+          "$value": "{ocn.box-shadow.lg}"
         }
       }
     },
@@ -2860,7 +2871,7 @@
       "drawer": {
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.sm}"
+          "$value": "{ocn.border-width.sm}"
         },
         "padding-inline-start": {
           "$type": "spacing",
@@ -2947,7 +2958,7 @@
         "invalid": {
           "border-inline-start-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.md}"
+            "$value": "{ocn.border-width.md}"
           },
           "padding-inline-start": {
             "$type": "spacing",
@@ -3422,11 +3433,11 @@
       "modal-dialog": {
         "border-radius": {
           "$type": "borderRadius",
-          "$value": "{ocn.border-radius.lg}"
+          "$value": "{ocn.border-radius.none}"
         },
         "box-shadow": {
           "$type": "boxShadow",
-          "$value": "{voorbeeld.box-shadow.lg}"
+          "$value": "{ocn.box-shadow.modal}"
         },
         "header": {
           "padding-block-start": {
@@ -3481,7 +3492,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           }
         },
         "border-color": {
@@ -3523,7 +3534,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           }
         },
         "content": {
@@ -3542,7 +3553,7 @@
         },
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.sm}"
+          "$value": "{ocn.border-width.sm}"
         }
       }
     }
@@ -3592,7 +3603,7 @@
         },
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.sm}"
+          "$value": "{ocn.border-width.sm}"
         },
         "border-color": {
           "$type": "color",
@@ -3639,7 +3650,7 @@
         "relative-link": {
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           },
           "icon": {
             "margin-inline": {
@@ -3767,7 +3778,7 @@
         "page-link": {
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           },
           "font-weight": {
             "$type": "fontWeights",
@@ -4042,7 +4053,7 @@
         },
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{utrecht.form-control.border-width}"
+          "$value": "{ocn.form-control.border-width}"
         },
         "size": {
           "$type": "sizing",
@@ -4079,7 +4090,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{utrecht.form-control.focus.border-width}"
+            "$value": "{ocn.form-control.focus.border-width}"
           }
         },
         "hover": {
@@ -4107,7 +4118,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{utrecht.form-control.invalid.border-width}"
+            "$value": "{ocn.form-control.invalid.border-width}"
           }
         },
         "disabled": {
@@ -4131,7 +4142,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{utrecht.form-control.border-width}"
+            "$value": "{ocn.form-control.border-width}"
           },
           "color": {
             "$type": "color",
@@ -4166,7 +4177,7 @@
             },
             "border-width": {
               "$type": "borderWidth",
-              "$value": "{utrecht.form-control.focus.border-width}"
+              "$value": "{ocn.form-control.focus.border-width}"
             },
             "color": {
               "$type": "color",
@@ -4254,7 +4265,7 @@
         },
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{utrecht.form-control.border-width}"
+          "$value": "{ocn.form-control.border-width}"
         },
         "color": {
           "$type": "color",
@@ -4339,7 +4350,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{utrecht.form-control.invalid.border-width}"
+            "$value": "{ocn.form-control.invalid.border-width}"
           }
         }
       }
@@ -4359,7 +4370,7 @@
         "focus": {
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{utrecht.form-control.focus.border-width}"
+            "$value": "{ocn.form-control.focus.border-width}"
           }
         },
         "hover": {
@@ -4570,11 +4581,11 @@
       "skip-link": {
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.sm}"
+          "$value": "{ocn.border-width.sm}"
         },
         "box-shadow": {
           "$type": "boxShadow",
-          "$value": "{voorbeeld.box-shadow.lg}"
+          "$value": "{ocn.box-shadow.lg}"
         },
         "font-weight": {
           "$type": "fontWeights",
@@ -4600,7 +4611,7 @@
         },
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{voorbeeld.border-width.sm}"
+          "$value": "{ocn.border-width.sm}"
         },
         "font-family": {
           "$type": "fontFamilies",
@@ -4779,7 +4790,7 @@
         "item": {
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           },
           "border-color": {
             "$type": "color",
@@ -4917,7 +4928,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           }
         },
         "icon": {
@@ -4981,7 +4992,7 @@
           },
           "box-shadow": {
             "$type": "boxShadow",
-            "$value": "{voorbeeld.box-shadow.sm}"
+            "$value": "{ocn.box-shadow.sm}"
           },
           "border-radius": {
             "$type": "borderRadius",
@@ -4989,7 +5000,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           }
         }
       }
@@ -5075,7 +5086,7 @@
           },
           "border-block-end-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.md}"
+            "$value": "{ocn.border-width.md}"
           },
           "color": {
             "$type": "color",
@@ -5095,7 +5106,7 @@
           },
           "border-block-end-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           }
         }
       }
@@ -5105,11 +5116,11 @@
         "container": {
           "box-inline-end-shadow": {
             "$type": "boxShadow",
-            "$value": "{voorbeeld.box-shadow.lg}"
+            "$value": "{ocn.box-shadow.lg}"
           },
           "box-inline-start-shadow": {
             "$type": "boxShadow",
-            "$value": "{voorbeeld.box-shadow.lg}"
+            "$value": "{ocn.box-shadow.lg}"
           }
         },
         "footer": {
@@ -5119,7 +5130,7 @@
           },
           "border-block-start-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.md}"
+            "$value": "{ocn.border-width.md}"
           },
           "font-weight": {
             "$type": "fontWeights",
@@ -5163,7 +5174,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{utrecht.form-control.border-width}"
+            "$value": "{ocn.form-control.border-width}"
           },
           "not-checked": {
             "background-color": {
@@ -5238,7 +5249,7 @@
         },
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{utrecht.form-control.border-width}"
+          "$value": "{ocn.form-control.border-width}"
         },
         "color": {
           "$type": "color",
@@ -5329,7 +5340,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{utrecht.form-control.invalid.border-width}"
+            "$value": "{ocn.form-control.invalid.border-width}"
           },
           "color": {
             "$type": "color",
@@ -5353,6 +5364,10 @@
         "font-weight": {
           "$type": "fontWeights",
           "$value": "{utrecht.form-control.font-weight}"
+        },
+        "border-bottom-width": {
+          "$type": "borderWidth",
+          "$value": "{ocn.border-width.mdlg}"
         }
       }
     },
@@ -5396,7 +5411,7 @@
         },
         "border-width": {
           "$type": "borderWidth",
-          "$value": "{utrecht.form-control.border-width}"
+          "$value": "{ocn.form-control.border-width}"
         },
         "color": {
           "$type": "color",
@@ -5487,7 +5502,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{utrecht.form-control.invalid.border-width}"
+            "$value": "{ocn.form-control.invalid.border-width}"
           },
           "color": {
             "$type": "color",
@@ -5511,6 +5526,10 @@
         "font-weight": {
           "$type": "fontWeights",
           "$value": "{utrecht.form-control.font-weight}"
+        },
+        "border-width-bottom": {
+          "$type": "borderWidth",
+          "$value": "{ocn.border-width.mdlg}"
         }
       }
     },
@@ -5588,7 +5607,7 @@
           "checked": {
             "background-color": {
               "$type": "color",
-              "$value": "{ocn.color.green.50}"
+              "$value": "{ocn.color.black}"
             },
             "color": {
               "$type": "color",
@@ -5677,7 +5696,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           },
           "icon-size": {
             "$type": "sizing",
@@ -5692,7 +5711,7 @@
           "checked": {
             "border-color": {
               "$type": "color",
-              "$value": "{voorbeeld.feedback.positive.border-color}"
+              "$value": "{ocn.color.black}"
             }
           },
           "not-checked": {
@@ -5715,7 +5734,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.md}"
+            "$value": "{ocn.border-width.md}"
           }
         },
         "step-heading": {
@@ -6103,7 +6122,7 @@
           },
           "border-width": {
             "$type": "borderWidth",
-            "$value": "{voorbeeld.border-width.sm}"
+            "$value": "{ocn.border-width.sm}"
           }
         },
         "step-header": {
@@ -6135,6 +6154,38 @@
             "$type": "spacing",
             "$value": "{voorbeeld.space.column.cat}"
           }
+        }
+      }
+    }
+  },
+  "components/navigation-item": {
+    "ocn": {
+      "navigation-item": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{ocn.color.gray.20}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{ocn.color.gray.80}"
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": "1"
+        },
+        "spacing": {
+          "$type": "spacing",
+          "$value": "32"
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{ocn.color.black}"
+          }
+        },
+        "text-decoration": {
+          "$type": "textDecoration",
+          "$value": "underline"
         }
       }
     }
@@ -6231,6 +6282,7 @@
       "components/textbox",
       "components/toolbar-button",
       "components/progress-list",
+      "components/navigation-item",
       "components/unordered-list"
     ]
   }
